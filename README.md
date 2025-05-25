@@ -1,51 +1,60 @@
-# Challenge Name
+# AI Content Podcaster
 
 ## Overview
-[Difficulty level: Beginner/Intermediate/Advanced] Brief introduction to the challenge (2-3 sentences describing what the application is and why it's valuable). This [difficulty level] challenge focuses on implementing [key technical concepts/patterns].
+Create an innovative mobile application that leverages Natural Language Processing (NLP) and Large Language Models (LLMs) to transform static documents into engaging podcast-style conversations between two AI-generated voices. This advanced-level challenge focuses on implementing sophisticated text analysis, content comprehension, and natural-sounding speech synthesis to make learning from documents more accessible, entertaining, and effective.
 
 ## Goal
-One clear, concise sentence describing what the participant will build and the primary value it provides to users.
+Build a mobile application that allows users to upload text, PDF, or DOCX files about any topic and automatically generates an engaging, conversational podcast featuring two distinct AI voices discussing the content in various interactive formats (debate, collaboration, explanation, etc.), making complex information more digestible and entertaining.
 
 ## Required Features
-- **Feature 1**: Brief description of implementation details and user experience
-- **Feature 2**: Brief description of implementation details and user experience
-- **Feature 3**: Brief description of implementation details and user experience
-  - Sub-point 1 (if needed)
-  - Sub-point 2 (if needed)
-- **Feature 4**: Brief description of implementation details and user experience
-- **Feature 5**: Brief description of implementation details and user experience
+- **Document upload**: Support uploading and processing of text, PDF, and DOCX files with proper extraction of formatted content
+- **Content analysis**: Implement NLP to analyze document structure, key topics, arguments, and information hierarchy
+- **Conversation generation**: Utilize LLMs to transform document content into natural-sounding dialogues between two distinct personas
+- **Conversation styles**: Offer multiple conversation formats including:
+  - Collaborative explanation (two voices helping each other understand)
+  - Point/counterpoint debate on main ideas
+  - Teacher/student format with questions and explanations
+  - Expert interview simulation
+- **Voice synthesis**: Integrate text-to-speech technology to create distinct, natural-sounding voices with appropriate intonation and pacing
+- **Podcast controls**: Provide standard audio playback controls with additional features like bookmarking important points and adjustable playback speed
+- **Content summarization**: Generate episode notes and key takeaways from the conversation
+- **Sharing capabilities**: Allow export of generated podcasts as audio files with transcripts
+- **Library management**: Organize created podcasts with search and filter functionality
 
 ## Technical Requirements
-- Performance requirement 1 (e.g., target response times, scores)
-- Technical constraint 2 (e.g., security requirements)
-- Quality standard 3 (e.g., test coverage, accessibility)
-- Implementation requirement 4 (e.g., specific patterns or approaches)
-- Platform/environment requirement 5 (if applicable)
-
-## Datasets
-[Include this section only if the challenge includes provided data]
-
-- **Dataset Name**: Brief description of the dataset purpose and contents
-  - **Format**: File format and location (e.g., JSON at /data/filename.json, CSV at /data/filename.csv)
-  - **Size**: Approximate size or number of records
-  - **Structure**: Description of data organization (e.g., nested objects, relational tables)
-  - **Fields/Columns**: Summary of important fields/columns and their meaning
-- **Additional Dataset** (if applicable): Description of any additional datasets
+- Process and analyze documents up to 50 pages within reasonable time (under 2 minutes)
+- Ensure generated conversations maintain factual accuracy to the original document
+- Create natural-sounding dialogue with appropriate transitions, questions, and responses
+- Implement efficient on-device processing for shorter documents with cloud processing option for longer texts
+- Support multiple languages for both document analysis and speech synthesis
+- Ensure proper handling of technical terminology, citations, and specialized content
+- Optimize audio quality for clarity while maintaining reasonable file sizes
 
 ## Deliverables
 - GitHub repository with complete source code
 - README with setup instructions and feature overview
 - 3 ~ 10 screenshots showcasing different app states
+- Audio samples demonstrating various conversation styles
 - Description of technical decisions and challenges overcome
-- [Any additional deliverables specific to this challenge]
+- Implementation notes on NLP and LLM approaches
+- Performance metrics for document processing and conversation generation
 - (Optional) Link to a YouTube video for a short demo (30 seconds ~ 2 minutes)
 
 ## Bonus Ideas (Optional)
-- Enhancement idea 1
-- Enhancement idea 2
-- Enhancement idea 3
-- Enhancement idea 4
+- User-defined voice characteristics and personalities
+- Multi-voice conversations with more than two participants
+- Integration with popular podcast platforms for direct publishing
+- Interactive mode where users can ask questions about the content and get responses from the AI voices
+- Content expansion where AI voices bring in relevant external information not contained in the original document
+- Emotional tone detection and appropriate vocal expression
+- Custom intro/outro music and professional podcast formatting
+- Topic segmentation with chapter markers in longer documents
+- Multilingual conversation mode that can explain concepts in different languages
+- Real-time fact-checking against reliable sources during conversation generation
 
 ## Additional Resources (Optional)
-- [Include any starter code, APIs, or documentation links here]
-- [Include reference materials if applicable]
+- [Natural Language Processing Fundamentals](https://web.stanford.edu/~jurafsky/slp3/)
+- [Large Language Models and Prompt Engineering](https://www.promptingguide.ai/)
+- [Text-to-Speech Technology](https://cloud.google.com/text-to-speech/docs/basics)
+- [Document Processing and Information Extraction](https://spacy.io/usage/processing-pipelines)
+- [Audio Processing for Mobile Applications](https://developer.apple.com/documentation/avfaudio)
